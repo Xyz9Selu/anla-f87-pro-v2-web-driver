@@ -6,7 +6,6 @@
 ## 1. 启动 (必须用 server, 不能双击 index.html)
 
 ```bash
-cd offline
 ./start.sh                 # 在线模式: 缺啥自动从 CDN 拉取并缓存
 ./start.sh --offline       # 真离线测试: 只读本地缓存, 缺文件直接 404
 ./start.sh --port 8080     # 默认 8080
@@ -21,19 +20,19 @@ JS 里打过补丁, 用的是绝对路径 `/cdn_static/...` `/cfg/...` `/api/...
 ## 2. 目录结构
 
 ```
-offline/
-  index.html              # 首页 (已去统计 bt-stats.js, favicon 本地化, 标题 AULA offline)
-  96497d6bd8989bff.wasm   # 根目录 wasm (原站 /96497....wasm, 需 WAF cookie 才抓得到)
-  static/js/*.js          # 5 个 bundle (app / vendors / keyboard / elementUI / pintura)
-  static/js/*.js.orig     # 补丁前备份 (保留, 别删)
-  static/css/*.css
-  static/img/*            # 36 个语言旗 svg + 灯效图标 + key_switch
-  static/fonts/*          # element-icons + iconfont
-  cdn_static/keyboards/*  # ~150 张键盘底图 (原 https://static.driveall.cn/static/keyboards/)
-  cdn_static/mouses/hfd.png
-  cfg_cache/              # 原 https://config.driveall.cn/* 的本地缓存
-    axial.json, gif/defaultGif.json, logo/..., protocol/...
-  server.py               # 本地服务器 + 缓存代理 (唯一需要运行的东西)
+index.html              # 首页 (已去统计 bt-stats.js, favicon 本地化, 标题 AULA offline)
+96497d6bd8989bff.wasm   # 根目录 wasm (原站 /96497....wasm, 需 WAF cookie 才抓得到)
+static/js/*.js          # 5 个 bundle (app / vendors / keyboard / elementUI / pintura)
+static/js/*.js.orig     # 补丁前备份 (保留, 别删)
+static/css/*.css
+static/img/*            # 36 个语言旗 svg + 灯效图标 + key_switch
+static/fonts/*          # element-icons + iconfont
+cdn_static/keyboards/*  # ~150 张键盘底图 (原 https://static.driveall.cn/static/keyboards/)
+cdn_static/mouses/hfd.png
+cfg_cache/              # 原 https://config.driveall.cn/* 的本地缓存
+  axial.json, gif/defaultGif.json, logo/..., protocol/...
+server.py               # 本地服务器 + 缓存代理 (唯一需要运行的东西)
+start.sh                # 启动脚本: python3 server.py "$@"
 ```
 
 ## 3. server.py 路由 (JS 已按此打补丁)

@@ -4,7 +4,7 @@
 Serves the mirrored frontend (originally https://hev.aulacn.com/#/)
 locally, and proxies + caches CDN / API requests:
 
-  /                       -> offline/index.html (this dir)
+  /                       -> index.html (this dir)
   /static/*, /*.wasm      -> local files
   /cdn_static/*           -> local cdn_static/*, else fetch
                              https://static.driveall.cn/static/* and cache
