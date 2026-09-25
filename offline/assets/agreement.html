@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户协议 - 服务条款</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .last-update {
+            background: rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .search-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #e0e6ed;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box input:focus {
+            border-color: #4a6491;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 100, 145, 0.2);
+        }
+        
+        .btn {
+            background: #4a6491;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn:hover {
+            background: #3a547e;
+            transform: translateY(-2px);
+        }
+        
+        .btn-print {
+            background: #27ae60;
+        }
+        
+        .btn-print:hover {
+            background: #219653;
+        }
+        
+        .content-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .toc {
+            flex: 0 0 280px;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .toc h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+        
+        .toc ul {
+            list-style: none;
+        }
+        
+        .toc li {
+            margin-bottom: 12px;
+        }
+        
+        .toc a {
+            text-decoration: none;
+            color: #4a6491;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .toc a:hover {
+            background: #f0f7ff;
+            color: #2c3e50;
+            transform: translateX(5px);
+        }
+        
+        .toc a i {
+            font-size: 0.9rem;
+            color: #7f8c9a;
+        }
+        
+        .agreement-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            line-height: 1.8;
+        }
+        
+        .agreement-content h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f8;
+        }
+        
+        .agreement-content h3 {
+            color: #4a6491;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .agreement-content p {
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        .agreement-content .highlight {
+            background: #fff9db;
+            padding: 20px;
+            border-left: 4px solid #ffd43b;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        
+        .agreement-content ul {
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .agreement-content li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .agreement-content li:before {
+            content: "•";
+            color: #4a6491;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .accept-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .accept-section p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+        
+        .checkbox-container input {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .checkbox-container label {
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+        
+        .btn-accept {
+            background: #27ae60;
+            padding: 15px 45px;
+            font-size: 1.1rem;
+            display: inline-flex;
+            gap: 10px;
+        }
+        
+        .btn-accept:hover {
+            background: #219653;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c9a;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 1px solid #e0e6ed;
+        }
+        
+        @media (max-width: 900px) {
+            .content-container {
+                flex-direction: column;
+            }
+            
+            .toc {
+                position: relative;
+                top: 0;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>用户协议</h1>
+            <p class="subtitle">请在使用我们的服务前仔细阅读以下条款和条件</p>
+            <p class="last-update"><i class="fas fa-sync-alt"></i> 最后更新日期：2025年06月17日</p>
+        </header>
+        
+        <div class="content-container">
+            <nav class="toc">
+                <h3><i class="fas fa-list"></i> 协议目录</h3>
+                <ul>
+                    <li><a href="#section1"><i class="fas fa-chevron-right"></i> 1. 引言与接受条款</a></li>
+                    <li><a href="#section2"><i class="fas fa-chevron-right"></i> 2. 账户注册与管理</a></li>
+                    <li><a href="#section3"><i class="fas fa-chevron-right"></i> 3. 用户行为规范</a></li>
+                    <li><a href="#section4"><i class="fas fa-chevron-right"></i> 4. 知识产权</a></li>
+                    <li><a href="#section5"><i class="fas fa-chevron-right"></i> 5. 隐私保护</a></li>
+                    <li><a href="#section6"><i class="fas fa-chevron-right"></i> 6. 免责声明</a></li>
+                    <li><a href="#section7"><i class="fas fa-chevron-right"></i> 7. 服务变更与终止</a></li>
+                    <li><a href="#section8"><i class="fas fa-chevron-right"></i> 8. 法律适用与争议解决</a></li>
+                    <li><a href="#section9"><i class="fas fa-chevron-right"></i> 9. 其他条款</a></li>
+                </ul>
+            </nav>
+            
+            <main class="agreement-content">
+                <h2 id="section1">1. 引言与接受条款</h2>
+                <p>本用户协议（以下简称"协议"）是您（用户）与本公司之间就使用我们的服务所订立的协议。本协议描述了我们向您提供的服务以及您的权利和义务。</p>
+                <p>通过访问或使用我们的服务，即表示您同意遵守本协议的所有条款和条件。如果您不同意本协议的任何部分，请不要使用我们的服务。</p>
+                <div class="highlight">
+                    <p><strong>重要提示：</strong> 我们保留随时修改本协议的权利。修改后的协议将在我们的网站上公布，您的继续使用将被视为接受修改后的协议。</p>
+                </div>
+                
+                <h2 id="section2">2. 账户注册与管理</h2>
+                <h3>2.1 账户注册</h3>
+                <p>要使用我们的某些服务，您需要注册账户并提供准确、完整和最新的信息。您必须年满18周岁或达到您所在司法管辖区的法定年龄才能注册账户。</p>
+                
+                <h3>2.2 账户安全</h3>
+                <p>您有责任维护账户的安全：</p>
+                <ul>
+                    <li>您对账户下发生的所有活动负责</li>
+                    <li>您必须妥善保管账户凭证</li>
+                    <li>您必须立即通知我们任何未经授权的账户使用行为</li>
+                </ul>
+                
+                <h3>2.3 账户终止</h3>
+                <p>我们保留自行决定暂停或终止您的账户的权利，包括但不限于以下情况：</p>
+                <ul>
+                    <li>您违反本协议的任何条款</li>
+                    <li>您从事非法或欺诈活动</li>
+                    <li>法律要求我们这样做</li>
+                </ul>
+                
+                <h2 id="section3">3. 用户行为规范</h2>
+                <p>在使用我们的服务时，您同意不从事以下行为：</p>
+                <ul>
+                    <li>违反任何适用的法律或法规</li>
+                    <li>侵犯他人的知识产权</li>
+                    <li>传播恶意软件、病毒或其他破坏性代码</li>
+                    <li>从事欺诈、网络钓鱼或其他欺骗性活动</li>
+                    <li>干扰或破坏服务的完整性或性能</li>
+                    <li>骚扰、威胁或恐吓其他用户</li>
+                </ul>
+                
+                <h2 id="section4">4. 知识产权</h2>
+                <h3>4.1 我们的权利</h3>
+                <p>我们保留服务和所有相关内容的全部所有权和知识产权，包括但不限于软件、文本、图形、徽标、图像和音频剪辑。</p>
+                
+                <h3>4.2 您的权利</h3>
+                <p>根据本协议，我们授予您有限的、非排他性的、不可转让的许可，允许您访问和使用服务，仅供个人和非商业用途。</p>
+                <div class="highlight">
+                    <p><strong>注意：</strong> 未经我们事先书面同意，您不得复制、修改、分发、出售或出租服务的任何部分。</p>
+                </div>
+                
+                <h2 id="section5">5. 隐私保护</h2>
+                <p>您的隐私对我们非常重要。我们的隐私政策解释了我们在您使用服务时如何收集、使用和披露您的个人信息。</p>
+                <p>通过使用服务，您同意我们可以根据隐私政策收集和使用您的信息。</p>
+                
+                <h2 id="section6">6. 免责声明</h2>
+                <p>服务按"原样"和"可用"的基础提供，不附带任何明示或暗示的保证。在法律允许的最大范围内，我们否认所有保证，包括但不限于适销性、特定用途适用性和不侵权的暗示保证。</p>
+                <p>我们不保证：</p>
+                <ul>
+                    <li>服务将满足您的要求</li>
+                    <li>服务将不间断、及时、安全或无错误</li>
+                    <li>通过服务获得的任何信息将准确或可靠</li>
+                </ul>
+                
+                <h2 id="section7">7. 服务变更与终止</h2>
+                <p>我们保留随时修改或中断服务（或其任何部分）的权利，无论是否通知。对于服务的任何修改、价格变动、暂停或终止，我们不对您或任何第三方承担责任。</p>
+                
+                <h2 id="section8">8. 法律适用与争议解决</h2>
+                <h3>8.1 管辖法律</h3>
+                <p>本协议应受中华人民共和国法律管辖并据其解释，不考虑其法律冲突规定。</p>
+                
+                <h3>8.2 争议解决</h3>
+                <p>因本协议引起的或与本协议有关的任何争议，双方应首先尝试通过友好协商解决。若协商不成，任何一方均有权将争议提交至我们主要营业所在地有管辖权的人民法院诉讼解决。</p>
+                
+                <h2 id="section9">9. 其他条款</h2>
+                <h3>9.1 完整协议</h3>
+                <p>本协议构成您与我们之间就服务达成的完整协议，并取代所有先前或同期的协议、陈述、保证和理解。</p>
+                
+                <h3>9.2 可分割性</h3>
+                <p>如果本协议的任何条款被认定为无效或不可执行，该条款应在最低必要范围内进行限制或删除，其余条款继续完全有效。</p>
+                
+                <h3>9.3 不可转让</h3>
+                <p>未经我们事先书面同意，您不得转让本协议或您的任何权利和义务。我们可以在未经您同意的情况下转让本协议。</p>
+                
+                <h3>9.4 联系方式</h3>
+                <p>如果您对本协议有任何疑问，请通过以下方式联系我们：hfd_ic@163.com</p>
+            </main>
+        </div>
+        
+        <!-- <div class="accept-section">
+            <p>我已阅读、理解并同意遵守上述用户协议的所有条款和条件</p>
+            <div class="checkbox-container">
+                <input type="checkbox" id="agreeCheckbox">
+                <label for="agreeCheckbox">我接受用户协议</label>
+            </div>
+            <button class="btn btn-accept" id="acceptBtn"><i class="fas fa-check-circle"></i> 确认并继续</button>
+        </div> -->
+        
+        <footer>
+            <p>© 2025 华奋达（东莞）科技有限公司. 保留所有权利。</p>
+            <p>联系邮箱：hfd_ic@163.com | 客服电话：0769-26622101</p>
+        </footer>
+    </div>
+    
+    <script>
+        
+        // 接受协议按钮逻辑
+        document.getElementById('acceptBtn').addEventListener('click', function() {
+            const checkbox = document.getElementById('agreeCheckbox');
+            if(checkbox.checked) {
+                // 这里可以添加跳转到下一页的代码
+				window.close()
+            } else {
+                alert('请先阅读并接受用户协议');
+            }
+        });
+        
+        // 搜索功能（简化版）
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const searchTerm = document.getElementById('searchInput').value.trim();
+            if(searchTerm) {
+                alert(`搜索功能：将在协议中查找 "${searchTerm}"\n在实际应用中，这里会实现高亮显示搜索结果的功能。`);
+                // 实际应用中这里应该实现搜索和结果高亮功能
+            } else {
+                alert('请输入搜索关键词');
+            }
+        });
+        
+        // 目录链接平滑滚动
+        document.querySelectorAll('.toc a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

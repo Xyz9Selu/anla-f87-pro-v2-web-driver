@@ -1,0 +1,270 @@
+[
+	{
+		"donw_url": "https://app.aulacn.com/f87prov2/AULA DRIVER Setup 1.0.0.exe"
+	},
+	{
+		"productId": 32818,
+		"productName": "MINI 60 HE",
+		"v": "1.18",
+		"file_name": "MINI_60_HE_0.01_V1.18.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 32930,
+		"productName": "MINI 60 HE PRO",
+		"v": "1.55",
+		"file_name": "MINI_60_HE_PRO_YAN_0.01_V1.55.exe",
+		"log": "升级日志",
+		"id": 15,
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 32930,
+		"productName": "MINI 60 HE PRO",
+		"v": "1.55",
+		"file_name": "MINI_60_HE_PRO_FENG_0.01_V1.55.exe",
+		"log": "升级日志",
+		"id": 16,
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 32929,
+		"productName": "MINI60HE MAX",
+		"v": "1.53",
+		"file_name": "MINI60HE_MAX_0.01_V1.53.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10001,
+		"productName": "AULA F87ProV2D",
+		"v": "1.66",
+		"file_name": "AULA_F87ProV2D_V1.66.exe",
+		"highlight_name": "AULA_F87ProV2D_V1.66(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10002,
+		"productName": "AULA F87ProV2C",
+		"v": "1.66",
+		"file_name": "AULA_F87ProV2C_V1.66.exe",
+		"highlight_name": "AULA_F87ProV2C_V1.66(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10000,
+		"productName": "AULA F87ProV2Z",
+		"v": "1.66",
+		"file_name": "AULA_F87ProV2Z_V1.66.exe",
+		"highlight_name": "AULA_F87ProV2Z_V1.66(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10042,
+		"productName": "AULA F108ProV2C",
+		"v": "1.07",
+		"file_name": "AULA F108ProV2C_V1.07.exe",
+		"highlight_name": "AULA F108ProV2C_V1.07(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10040,
+		"productName": "AULA_F87ProV2C",
+		"v": "1.67",
+		"file_name": "AULA_F87ProV2C_V1.67.exe",
+		"highlight_name": "AULA_F87ProV2C_V1.67(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10039,
+		"productName": "AULA_F87ProV2D",
+		"v": "1.67",
+		"file_name": "AULA_F87ProV2D_V1.67.exe",
+		"highlight_name": "AULA_F87ProV2D_V1.67(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10038,
+		"productName": "AULA_F87ProV2Z",
+		"v": "1.67",
+		"file_name": "AULA_F87ProV2Z_V1.67.exe",
+		"highlight_name": "AULA_F87ProV2Z_V1.67(H).exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10010,
+		"productName": "AULA F108Pro V2",
+		"v": "1.25",
+		"file_name": "AULA F108Pro V2_V1.25.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10019,
+		"productName": "MINI 68 HE PRO",
+		"v": "1.81",
+		"file_name": "MINI_68_HE_PRO_V1.81.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10020,
+		"productName": "MINI68 HE MAX",
+		"v": "1.73",
+		"file_name": "MINI68_HE_MAX_V1.73.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	},
+	{
+		"productId": 10018,
+		"productName": "MINI 68 HE",
+		"v": "1.21",
+		"file_name": "MINI_68_HE_V1.21.exe",
+		"log": "升级日志",
+		"updates": [
+			{
+				"type": "优化",
+				"content": "功能按键",
+				"type2": "優化",
+				"content2": "功能按鍵",
+				"type1": "Optimization",
+				"content1": "Function keys."
+			}
+		]
+	}
+
+]
